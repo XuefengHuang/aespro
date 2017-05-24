@@ -18,9 +18,9 @@ func main() {
     src := "exampleplaintext"
     key := "example key 1234"
 
-    crypted := aes.CFBEncrypt(src, key)
+    crypted := aespro.CFBEncrypt(src, key)
     fmt.Println("crypted is: ", crypted)
-    plain := aes.CFBDecrypt(crypted, key)
+    plain := aespro.CFBDecrypt(crypted, key)
     fmt.Println("plain is: ", plain)
 }
 ```
